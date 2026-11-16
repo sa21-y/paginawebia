@@ -1,0 +1,80 @@
+HEADER{
+   font-family:Futura Bt Boll;
+   color:DeepPink;
+   background-color:#7EB8EA;
+   text-align:center;
+   font-size:30px;
+   }
+body{
+   color:black;
+   background-color:#E6E6FA;
+   }
+
+p{ font-family:"Clearview";
+   font-size: 20px;
+   color:red;
+   text-align:justify;
+   }
+footer{
+    color:aqua;
+	background-color:#BC8F8F;
+	text-align:center;
+    font-size:15px;
+}
+table{
+	border-color:#4169E1;
+}
+
+
+/*todo esto es solo para los botones, no tocar*/
+#menuhorizontal ul li {
+	display: inline;
+	padding:2px 7px; /*separar el texto*/
+	margin: 5px; /*Separar los botones*/
+	background-color:#800080;
+	color:white;
+	font-family:"comic Sans Ms";
+	font-size:"20px";
+}
+#menuhorizontal ul {
+	/*línea para delinear la botonera*/
+	border-bottom:5px;
+	border-bottom-style:solid;
+	border-bottom-color:#E4E4E4
+}
+#menuhorizontal ul li:hover{
+	background-color:#cccccc; /*color de fondo sobre el botón*/
+	cursor:pointer/*cambiar el aspecto del puntero*/
+}
+#menuhorizontal ul li a{
+	text-decoration:none;
+	color:inherit;
+}
+#menuD ul li{/*formato de los botones*/
+    width:100px;
+	height:25px;
+	display:inline-block;/*en línea pero respetando maárgenes*/
+	padding:2px 7px;
+	margin:5px;
+	background-color:#800080;
+	color:white;
+	text-align:center;
+	font-family:"comic sans MS";
+	font-size:16px;
+	position:relative;
+}
+#menuD ul li:hover{
+	background-color:grey;
+	color:purple;
+}
+#menuD li>ul{
+	display:none/*ocultar las listas anidadas, los submenús*/
+}
+#menuD li:hover>ul{/*muestra los submenús al pasar por encima del menú*/
+    display:inline-block;/*muestra los submenús uno debajo de otro al lado del menú*/
+	position:absolute;/*evita que se superpongan los botones*/
+}
+#menuD ul>li:hover>ul{/*muestra los submenús al pasar por encima de un submenú*/
+     display:inline-block;
+	 position:absolute;
+}

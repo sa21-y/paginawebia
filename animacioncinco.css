@@ -1,0 +1,15 @@
+
+#info {/* la animación del cuadrito se hace más grande al tocarlo*/
+	width: 50px;
+	height:40px;
+	background-color:pink;
+	color:black;
+	font-size:8px;
+	transition-property: all;
+	transition-duration: 2s;
+}
+#info:hover{
+	width: 200px;
+	height:50px;
+	font-size:22px;
+}

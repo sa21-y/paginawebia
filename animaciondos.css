@@ -1,0 +1,47 @@
+#aviso {
+	width: 150px;
+	height:50px;
+	position: relative;
+	animation: avisoA 10s ease-out infinite alternate;
+}
+#aviso >p{
+	font: 20px "algerian";
+	color: white;
+	text-align: center;
+}
+#aviso:hover{
+	animation-play-state: pause;
+}
+@keyframes avisoA { /*la animacion de nos gysta tic*/
+    0% {left: 0px; background-color:purple}
+	100% {left: 600px; background-color:lightblue}
+}
+@keyframes htmlA{/*la animación de la foto del condesa dando vueltas*/
+    0% {left: 0px;transform:rotate(0deg) scale(1,1); filter:hue-rotate(1deg)}
+	25% {left: 400px;transform:rotate(45deg) scale(0.5,0.5); filter:hue-rotate(60)}
+	50% {left: 800px;transform:rotate(90deg) scale(2,2); filter:hue-rotate(120deg)}
+}
+#html{
+	width:160px;
+	position:relative;
+	animation:htmlA 5s linear infinite normal;
+}
+#html:hover{
+	animation-play-state:paused;
+}
+
+@keyframes canvaA { /*este es el reloj de processing*/
+    0% { left: 0px; filter:hue-rotate (1deg)}
+    50%{left: 500px; filter:hue-rotate (90deg)}  
+    100% { left: 1000px;filter:hue-rotate (180deg)}
+}
+#pjsCanvas{
+    display: flex;
+    width: 90px; 
+    position:relative;
+    animation: canvaA 25s linear infinite alternate;
+}
+#pjsCanvas:hover{
+    animation-play-state:paused;
+    transform:scale(3,3) rotate(45deg);
+}

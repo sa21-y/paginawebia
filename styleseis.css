@@ -1,0 +1,28 @@
+HEADER{
+   font-family:Futura Bt Boll;
+   color:DeepPink;
+   background-color:#7EB8EA;
+   text-align:center;
+   font-size:30px;
+   }
+body{
+   color:black;
+   background-color:#E6E6FA;
+   }
+
+p{ font-family: "Calibri";
+   font-size: 25px;
+   color:purple;
+   text-align:justify;
+   }
+footer{
+    color:aqua;
+	background-color:#BC8F8F;
+	text-align:center;
+    font-size:15px;
+}
+table{
+	border-color:#4169E1;
+	background-color:#E6F6FA; 
+	font-size: 18px;
+}
